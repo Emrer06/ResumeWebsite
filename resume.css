@@ -1,0 +1,151 @@
+body {
+    background: #dbe4ee;
+
+}
+
+
+#mainNavbar {
+    background-color: #1d3557;
+
+}
+
+#mainNavbar .navbar-brand {
+    font-family: 'JetBrains Mono', monospace;
+    color: #fff;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #fff;
+}
+
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0 5% 0;
+}
+
+.myPicture {
+    border-radius: 50%;
+    border: 3px solid #1d3557;
+    filter: drop-shadow(3px 4px 7px #28282c);
+    min-width: 200px;
+    min-height: 200px;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(myPicture.jpg);
+    background-size: cover;
+    margin-right: 30px;
+    background-position-x: 2px;
+    background-repeat: none;
+}
+
+.welcome-text {
+    color: #1d3557;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    font-family: 'Paytone One', sans-serif;
+    color: #1d3557;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'Paytone One', sans-serif;
+    color: #1d3557;
+    font-size: 1.5em;
+}
+
+li {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1em;
+    color: #1d3557;
+}
+
+p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1em;
+    color: #1d3557;
+}
+
+.welcome-text p {
+    font-size: 1.1em;
+}
+
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.skills-list li {
+    background-color: #f0f0f0;
+    /* Add your preferred background color */
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.projects-section {
+    padding-top: 3%;
+}
+
+.contact-section {
+    padding-top: 3%;
+}
+
+
+.socials-icon {
+    width: 60px;
+    height: 50px;
+
+
+}
+
+#linkdn {
+
+    width: auto;
+    height: 40px;
+}
+
+a.svg-link {
+    text-decoration: none;
+    /* Remove underline or other text decoration */
+    cursor: pointer;
+    /* Change the cursor to a pointer on hover */
+}
+
+.socials:after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 40px;
+    /* Adjust the height as needed for the desired space */
+}
+
+@media (max-width: 900px) {
+    .welcome-section {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .welcome-text h1 {
+        text-align: center;
+    }
+
+    .myPicture {
+        margin-right: 0;
+        margin-bottom: 3%;
+    }
+
+
+}

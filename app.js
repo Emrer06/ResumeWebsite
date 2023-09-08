@@ -1,6 +1,7 @@
 function scrollToSection(targetSectionId) {
     const targetElement = document.getElementById(targetSectionId);
     const targetOffset = targetElement.getBoundingClientRect().top + window.scrollY;
+    const navigationBarHeight = document.querySelector(".navbar").offsetHeight;
     const duration = 1000; // You can adjust the duration as needed
     const startTime = performance.now();
     const startScrollY = window.scrollY;
@@ -9,7 +10,7 @@ function scrollToSection(targetSectionId) {
         const currentTime = time - startTime;
         const progress = Math.min(currentTime / duration, 1);
         const easedProgress = easeOutQuad(progress);
-        const newY = startScrollY + (targetOffset - startScrollY) * easedProgress;
+        const newY = startScrollY + (targetOffset - startScrollY - navigationBarHeight) * easedProgress;
 
         window.scrollTo(0, newY);
 
